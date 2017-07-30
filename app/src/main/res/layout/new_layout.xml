@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F3F6"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.Jack.Forus.Topbar
+        android:id="@+id/MyTopbar2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        custom:leftText="返回"
+        custom:leftBackground="#00000000"
+        custom:rightBackground="#00000000"
+        custom:leftTextColor="#FFFFFF"
+        custom:centerText=""
+        custom:centerTextColor="#FFFFFF"
+        custom:centerBackground="#00000000"
+        custom:rightText="更多"
+        custom:rightTextColor="#FFFFFF"
+        custom:title="圈子"
+        custom:titleTextColor="#ffffff"
+        custom:titleTextSize="7sp">
+
+    </com.example.Jack.Forus.Topbar>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:srcCompat="@color/common_google_signin_btn_text_dark_default" />
+</LinearLayout>

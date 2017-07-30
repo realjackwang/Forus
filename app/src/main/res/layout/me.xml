@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <com.example.Jack.Forus.Topbar
+        android:id="@+id/MyTopbar1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        custom:leftBackground="#00000000"
+        custom:leftText="返回"
+        custom:leftTextColor="#FFFFFF"
+        custom:rightText="更多"
+        custom:rightTextColor="#FFFFFF"
+        custom:rightBackground="#00000000"
+        custom:title="个人"
+        custom:titleTextColor="#ffffff"
+        custom:titleTextSize="7sp">
+
+    </com.example.Jack.Forus.Topbar>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="615dp"-->
+        <!--custom:srcCompat="@color/common_google_signin_btn_text_dark_default" />-->
+
+    <LinearLayout style="@style/wrap_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:weightSum="1">
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:src="@drawable/nothing" />
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="89dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                custom:srcCompat="@drawable/nophoto"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="10dp" />
+
+            <LinearLayout
+                android:id="@+id/person12"
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:onClick="aaa"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="0.24"
+                    android:src="@drawable/nothing" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="106dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.71"
+                    android:duplicateParentState="true"
+                    android:textSize="21dp"
+                    tools:layout_editor_absoluteX="139dp"
+                    tools:layout_editor_absoluteY="28dp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    style="@style/img_arrow"
+                    android:layout_width="38dp"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:layout_gravity="center"
+                    android:paddingRight="8dp"
+                    tools:layout_editor_absoluteX="345dp"
+                    tools:layout_editor_absoluteY="51dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/wrap_layout" >
+        <!-- 上圆角-->
+        <LinearLayout style="@style/top_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="我发布的" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View style="@style/bg_line"/>
+        <!-- 无圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="已完成的" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        <View style="@style/bg_line"/>
+        <!-- 下圆角-->
+        <LinearLayout style="@style/bottom_layout">
+            <TextView style="@style/usertext" android:text="消息通知" />
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+
+        <LinearLayout style="@style/single_layout">
+
+            <TextView
+                style="@style/usertext"
+                android:text="关于软件" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
